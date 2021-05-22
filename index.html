@@ -228,7 +228,7 @@
           </div>
 
           <div class="timeline">
-              <div class="timeline-item" data-aos-offset="400" data-aos="fade-right" data-aos-duration="1000">
+              <div class="timeline-item" data-aos-offset="300" data-aos="fade-right" data-aos-duration="1000">
                   <div class="timeline-icon layers-icon">
                       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs></defs><title>layers</title><path class="cls-1" d="M16.34,27.89a.83.83,0,0,1-.68,0L3.15,22.28,1.52,23a.91.91,0,0,0,0,1.65L15.66,31a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.62-.73Zm0-7.94a.83.83,0,0,1-.68,0L3.31,14.41l-1.79.8a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.79-.8ZM30.48,9.07a.91.91,0,0,0,0-1.65L16.34,1.07a.83.83,0,0,0-.68,0L1.52,7.42a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0Z"/></svg>
                   </div>
@@ -381,11 +381,11 @@
       // разный offset для разных экранов
       if (window.innerWidth < 768) {
         for (let elem of document.querySelectorAll('[data-aos-offset]')) {
-          elem.setAttribute('data-aos-offset', '200');
+          elem.setAttribute('data-aos-offset', '150');
         }
       } else if (window.innerWidth < 1200) {
         for (let elem of document.querySelectorAll('[data-aos-offset]')) {
-          elem.setAttribute('data-aos-offset', '250')
+          elem.setAttribute('data-aos-offset', '200')
         }
       }
       AOS.init();
