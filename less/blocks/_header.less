@@ -1,0 +1,641 @@
+.header {  
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 73px;
+  padding-bottom: 95px;
+  overflow: hidden;  
+
+  @media (min-width: 768px) {
+    padding-top: 35px;
+    padding-bottom: 42px;
+  }
+  
+  @media (min-width: 1200px) {
+    background-image: url("../img/headerBg.png");
+    background-position: center;
+    background-repeat: repeat;
+    padding-top: 1px;
+    padding-bottom: 188px;
+  }
+}
+
+.fix-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/headerBg.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+  }
+}
+
+.fix-menu.active {
+  background-color: #fff;
+  box-shadow: 0 -5px 15px rgba(0,0,0, .45);  
+}
+
+.header-top {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 25px 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    padding: 27px 34px 27px;
+  }
+  
+  @media (min-width: 1200px) {
+    background-image: url("../img/headerBg.png");
+    background-position: center;
+    background-repeat: repeat;
+
+    padding: 67px 0 30px;
+  }
+}
+
+.header-logo {
+  position: relative;
+  z-index: 2;
+
+  margin-left: 4px;
+
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: -5px;
+    right: -5px;
+    height: 10px;
+    background-color: var(--yellow);
+    z-index: -1;
+  }
+  
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 1200px) {
+    
+  }
+}
+
+.header-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 360px;
+  background-color: #fff;
+  z-index: 5;
+  transform: translateX(100%); //чтобы меню изначально было скрыто справа
+  transition: .5s;
+
+  @media (min-width: 768px) {
+    max-width: 319px;
+  }
+  
+  @media (min-width: 1200px) {
+    display: block;
+    position: relative;
+    margin-left: -24px;
+    margin-bottom: 4px;
+    height: auto;
+    width: auto;
+    max-width: unset;
+    background-color: transparent;
+    transform: translateX(0%);
+  }
+}
+
+.header-menu .header-logo {
+  &:after {
+    bottom: 9px;
+  }
+  
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-menu.active {
+  padding: 25px 24px;
+  transform: translateX(0%); // чтобы меню выехало справа при нажатии на гамбургер
+
+  @media (min-width: 768px) {
+    padding: 24px 28px;
+  }
+}
+
+.header-menu__item {
+  display: block;
+  margin-left: 6px;
+  padding-top: 29px;
+  padding-bottom: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;  
+
+  @media (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    line-height: 1.2;
+    margin-left: 3px;
+  }  
+
+  @media (min-width: 1200px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 78px;
+    margin-left: 0px;
+    line-height: 1.2;
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.mobile-contacts {
+  display: block;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-contacts .header-socials {
+  display: none;  
+
+  @media (min-width: 768px) {    
+  }
+  
+  @media (min-width: 1200px) {    
+  }
+}
+
+.mobile-contacts .skills__icons {
+  margin-top: 39px;
+  margin-left: 4px;
+  margin-bottom: 47px;
+
+  @media (min-width: 768px) {
+    margin-top: 38px;
+    margin-left: 0px;
+  }
+}
+
+.mobile-contacts .skills__icons a {
+  margin-right: 22px;
+
+  @media (min-width: 768px) {
+    margin-right: 22px;
+  }
+}
+
+.mobile-contacts .skills__mail {
+  margin-left: 5px;
+  line-height: 1.1;
+
+  @media (min-width: 768px) {
+    margin-left: 2px;
+  }
+}
+
+.mobile-contacts .skills__mail a {
+  margin-top: 45px;
+  font-size: 18px;  
+  line-height: 1.222;  
+
+  @media (min-width: 768px) {
+    
+  }
+}
+
+.header-socials {
+  display: none;  
+  
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.header-socials a {
+  margin-right: 20px;
+}
+
+.header-socials a:last-child {
+  margin-right: 0px;
+}
+
+.header-top i {
+  margin-top: 4px;
+  font-size: 25px;  
+  
+  @media (min-width: 1200px) {
+    font-size: 34px;
+  }
+}
+
+.fa-github:hover {
+  color: #6cc644;
+  transition: 0.5s;
+}
+
+.fa-vk:hover {
+  color: #45668e;
+  transition: 0.5s;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 35px;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 92px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-top: 269px; //так как мы учитываем навигационную панель, которая будет фиксирована при скроле
+    margin-bottom: 702px;
+  }
+}
+
+.header-img {
+  margin-bottom: 51px;
+  width: 290px;
+  height: 290px;
+
+  @media (min-width: 768px) {
+    margin-top: 22px;
+    margin-right: 25px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-right: 0;
+    width: 457px;
+    height: 410px;
+  }
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-desc {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
+}
+
+.content-desc span {
+  display: block;
+}
+
+.content-desc p {
+  margin-bottom: 33px;
+  max-width: 374px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #393f47;
+  line-height: 1.667;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    max-width: 350px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 33px;
+    max-width: 500px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.content-desc h2 {
+  font-size: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+  
+  @media (min-width: 1200px) {
+    font-size: 40px;
+  }
+}
+
+.header-tittle {
+  margin-right: 8px;
+  margin-bottom: 27px;
+  font-size: 42px;
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 14px;
+    font-size: 90px;
+  }
+}
+
+.header__bg-img {
+  max-width: 1600px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 54px;
+  transform: scale(1.8);
+
+  @media (min-width: 425px) {
+    transform: scale(1.5);
+  }
+
+  @media (min-width: 576px) {
+    transform: scale(1.2);
+  }
+
+  @media (min-width: 768px) {
+    margin-top: -100px;
+    margin-bottom: 14px;
+    transform: scale(1.0);
+  }
+  
+  @media (min-width: 1200px) {
+    // position: absolute;
+    // z-index: -1;
+    // top: 593px;           
+    margin-top: -750px;
+  }
+}
+
+.content__btn {
+  display: none;  
+  
+  @media (min-width: 1200px) {
+    width: 464px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: absolute;
+    // top: 320px;
+  }
+}
+
+// ----------HEADER-CONTENT__SKILLS---------- //
+
+.skills-content {
+  display: flex;
+  flex-direction: column; 
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.skills__tittle {
+  margin-left: -2px;
+  margin-bottom: 30px;  
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 31px;
+  }
+}
+
+.skills__list {
+  width: 288px;  
+  font-size: 18px;
+  line-height: 1.2;  
+
+  @media (min-width: 768px) {
+    width: 322px;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 100%; 
+    margin-left: 30px;
+    margin-bottom: 42px;
+    font-size: 24px;
+    line-height: 1.6;     
+  }
+}
+
+.skills__list li {
+  position: relative;
+  margin-bottom: 16px;
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.skills__list li::before {
+  display: none;  
+  
+  @media (min-width: 1200px) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    top: 20px;
+    left: -30px;
+    background-color: #000;
+  }
+}
+
+.content-socials {
+  @media (min-width: 768px) {
+    margin-right: 46px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-right: 39px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.content-socials a {
+  margin-top: 28px;
+}
+
+.content-socials h2 {
+  margin-bottom: -8px;
+  font-size: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+}
+
+.skills__mail {
+  width: 238px;
+  border-bottom: 2px solid #000;
+  line-height: 1.2;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 238px;
+    margin-top: 37px;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 320px;
+    margin-top: 0px;
+  }
+}
+
+.skills__mail a {
+  font-size: 18px;
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.skills__mail:hover {
+  color: #039be5;
+  border-color: #039be5;
+  transition: 0.5s;
+}
+
+.skills__mail a:hover {
+  color: #039be5;
+  border-color: #039be5;
+  transition: 0.5s;
+}
+
+.skills__mail:active,
+.skills__mail a:active {
+  color: #ea655f;
+  border-color: #ea655f;
+}
+
+.skills__icons {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 23px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: -6px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.skills__icons a {
+  margin-bottom: -12px;
+  margin-right: 31px;
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 27px;
+  }  
+}
+  
+.skills__icons a:last-child {
+  margin-right: 2px;
+} 
+
+.skills__icons i {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 50px; 
+  color: #fff;
+}
+
+.skills__icons .fa-github {
+  margin-bottom: 3px;
+  font-size: 56px;
+  color: #000;
+
+  &:hover {
+    color: #6cc644;
+  }
+}
+
+.fa-paper-plane {
+  margin-right: -2px;
+  padding-top: 12px;
+  padding-right: 3px;
+  background-color: #039be5;
+  
+  &:hover {
+    color: #039be5;
+    background-color: #fff;
+    border: 2px solid #039be5;
+    transition: 0.5s;
+  }
+}
+
+.skills__icons .fa-vk {
+  padding-top: 11px;
+  padding-right: 3px;
+  font-size: 31px;
+  background-color: #4d76a1;
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid #4d76a1;
+  }
+}
+
+.skills__icons .fa-facebook {
+  margin-left: -2px;
+  padding-top: 12px;
+  padding-right: 3px;
+  background-color: #3b5998;
+
+  &:hover {
+    color: #3b5998;
+    background-color: #fff;
+    border: 2px solid #3b5998;
+    transition: 0.5s;
+  }
+}
