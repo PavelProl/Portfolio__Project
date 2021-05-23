@@ -136,19 +136,21 @@ button {
   &:before {
     content: "";
     position: absolute;
-    bottom: 2px;
+    bottom: 3px;
     left: -2px;
     right: -5px;
-    height: 12px;
+    height: 10px;
     background-color: var(--line);
     z-index: -1;
 
     @media (min-width: 768px) {
       bottom: 6px;
+      height: 12px;
     }
     
     @media (min-width: 1200px) {
       bottom: 15px;
+      height: 14px;
     }
   }
 }
@@ -242,27 +244,27 @@ button {
   text-align: center;
 
   @media (min-width: 768px) {
-    margin-bottom: 78px;
+    margin-bottom: 52px;
   }
   
   @media (min-width: 1200px) {
-    
+    margin-bottom: 78px;
   }
 }
 
-.section-wrapper .bottom-line:before {
-  top: 35px;
-  left: -2px;
-  right: -2px;
+.section-title {  
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 800;
+  color: #000;
 
   @media (min-width: 768px) {
-    top: 51px;
+    // margin-left: 0px;  
+    font-size: 52px;
   }
   
-  @media (min-width: 1200px) {
-    top: 63px;
-    left: -2px;
-    right: -2px;
+  @media (min-width: 1200px) {    
+    font-size: 64px;
   }
 }
 
@@ -342,4 +344,3 @@ button {
   color: red;
   top: 10px;
 }
-
