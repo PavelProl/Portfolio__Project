@@ -378,7 +378,7 @@ button {
 }
 @media (min-width: 768px) {
   .header-top {
-    padding: 10px 50px 10px;
+    padding: 15px 50px 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -727,6 +727,12 @@ button {
     flex-direction: row;
   }
 }
+@media (min-width: 1200px) {
+  .skills-content {
+    padding-top: 150px;
+    margin-top: -150px;
+  }
+}
 .skills__tittle {
   margin-left: -2px;
   margin-bottom: 30px;
@@ -948,7 +954,7 @@ button {
 }
 @media (min-width: 1200px) {
   .section-portfolio {
-    padding-top: 140px;
+    padding-top: 120px;
     padding-bottom: 67px;
     background-color: #f4f8f9;
   }
@@ -1459,7 +1465,7 @@ button {
 }
 @media (min-width: 1200px) {
   .section-contacts {
-    padding: 135px 0 150px;
+    padding: 125px 0 150px;
     background-image: url("../img/headerBg__grey.jpg");
     background-size: auto;
     background-position: center;
