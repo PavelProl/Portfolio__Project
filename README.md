@@ -1,10 +1,7 @@
 # Portfolio Project
 
-## What's done:
+This work is my graduation project on the course on JavaScript development from WebCademy.ru.
 
-HTML & CSS:
-* Flexbox
-* Mobile adaptation - mobile first
+Here you can meet me and see the work done by me on this course. 
 
-* Some JS for fun
-
+* This project is adaptive for mobile
