@@ -1,7 +1,5 @@
 # Portfolio Project
 
-This work is my graduation project on the course on JavaScript development from WebCademy.ru.
+* Adaptive for mobile and tablet.
 
-Here you can meet me and see the work done by me on this course. 
-
-* This project is adaptive for mobile
+* Here you can see the work done by me since 2020.
