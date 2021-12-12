@@ -92,11 +92,10 @@
   top: 0;
   right: 0;
   height: 100vh;
-  // width: 100%;
   max-width: 360px;
   background-color: #fff;
   z-index: 5;
-  transform: translateX(105%); //чтобы меню изначально было скрыто справа
+  transform: translateX(105%);
   transition: .5s;
 
   @media (min-width: 768px) {
@@ -128,7 +127,7 @@
 
 .header-menu.active {
   padding: 25px 24px;
-  transform: translateX(0%); // чтобы меню выехало справа при нажатии на гамбургер
+  transform: translateX(0%);
 
   @media (min-width: 768px) {
     padding: 24px 28px;
@@ -175,12 +174,6 @@
 
 .mobile-contacts .header-socials {
   display: none;  
-
-  @media (min-width: 768px) {    
-  }
-  
-  @media (min-width: 1200px) {    
-  }
 }
 
 .mobile-contacts .skills__icons {
@@ -215,10 +208,6 @@
   margin-top: 45px;
   font-size: 18px;  
   line-height: 1.222;  
-
-  @media (min-width: 768px) {
-    
-  }
 }
 
 .header-socials {
@@ -389,10 +378,7 @@
     transform: scale(1.0);
   }
   
-  @media (min-width: 1200px) {
-    // position: absolute;
-    // z-index: -1;
-    // top: 593px;           
+  @media (min-width: 1200px) {        
     margin-top: -750px;
   }
 }
@@ -405,8 +391,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // position: absolute;
-    // top: 320px;
   }
 }
 
@@ -641,9 +625,6 @@
 
 .header .bottom-line {
   &:before {
-    // height: 8px;
-    // bottom: 4px;
-    
     @media (min-width: 1200px) {
       bottom: 13px;
       height: 16px;
